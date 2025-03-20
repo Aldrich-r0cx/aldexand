@@ -1,2 +1,5 @@
 [submodule "aldexaner"]
 	url = https://github.com/user/repo-submodule.git
+[submodule "aldexand"]
+	path = aldexand
+	url = https://github.com/Aldrich-r0cx/aldexand.git
