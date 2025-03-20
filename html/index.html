@@ -1,0 +1,205 @@
+<html lang="en">
+ <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+     My Portfolio
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <style>
+        body {
+            background-color: #f7fafc;
+            color: #2d3748;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #2d3748;
+        }
+        nav a:hover {
+            color: #718096;
+        }
+        section {
+            padding: 4rem 1.5rem;
+        }
+        .bg-gray-200 {
+            background-color: #edf2f7;
+        }
+        .bg-gray-800 {
+            background-color: #2d3748;
+        }
+        .text-gray-800 {
+            color: #2d3748;
+        }
+        .text-gray-600 {
+            color: #718096;
+        }
+        .text-white {
+            color: #ffffff;
+        }
+        .hover\:text-gray-400:hover {
+            color: #a0aec0;
+        }
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+        .shadow-lg {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .hover\:bg-blue-600:hover {
+            background-color: #3182ce;
+        }
+        .focus\:ring-2:focus {
+            outline: 2px solid #3182ce;
+        }
+        .focus\:ring-blue-500:focus {
+            outline-color: #3182ce;
+        }
+    </style>
+ </head>
+ <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow">
+     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="text-2xl font-bold text-gray-800">
+         My Portfolio
+        </div>
+        <nav class="space-x-4">
+         <a class="text-gray-800 hover:text-gray-600" href="#about">
+            About
+         </a>
+         <a class="text-gray-800 hover:text-gray-600" href="#education">
+            Education
+         </a>
+         <a class="text-gray-800 hover:text-gray-600" href="#contact">
+            Contact
+         </a>
+        </nav>
+     </div>
+    </header>
+    <!-- About Section -->
+    <section class="container mx-auto px-6 py-16" id="about">
+     <div class="flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2">
+         <img alt="Profile picture" class="rounded-full mx-auto md:mx-0" src="c:\Users\hp\Downloads\55088473-6cc6-4273-82c3-615680dafaca-removebg-preview.png" width="577" height="433"/>
+        </div>
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12">
+         <h2 class="text-3xl font-bold text-gray-800">
+            About Me
+         </h2>
+         <p class="mt-4 text-gray-600">
+            I am Aldrich Alexander. I am currently studying at SMK Telkom 1 Medan and I really like the world of coding and using modern technology. I love coding and I always learn about new things.
+         </p>
+        </div>
+     </div>
+    </section>
+    <!-- Education Section -->
+    <section class="bg-gray-200 py-16" id="education">
+     <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center">
+         Education
+        </h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+         <!-- Education 1 -->
+         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img alt="School building of SMK Telkom 1 Medan" class="w-full" src="c:\Users\hp\Downloads\smktelkom.jpg"/>
+            <div class="p-6">
+             <h3 class="text-xl font-bold text-gray-800">
+                SMK Telkom 1 Medan
+             </h3>
+             <p class="mt-2 text-gray-600">
+                I am currently studying at SMK Telkom 1 Medan, where I am learning about various aspects of technology and coding.
+             </p>
+            </div>
+         </div>
+         <!-- Education 2 -->
+         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img alt="School building of SMP Negeri 1 Binjai" class="w-full" src="c:\Users\hp\Downloads\smpn1.webp" width="600" height="400"/>
+            <div class="p-6">
+             <h3 class="text-xl font-bold text-gray-800">
+                SMP Negeri 1 Binjai
+             </h3>
+             <p class="mt-2 text-gray-600">
+                I completed my junior high school education at SMP Negeri 1 Binjai.
+             </p>
+            </div>
+         </div>
+         <!-- Education 3 -->
+         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img alt="School building of SD Ahmad Yani Binjai" class="w-full" src="c:\Users\hp\Downloads\sd-ahmad-yani.jpg" width="400" height="600"/>
+            <div class="p-6">
+             <h3 class="text-xl font-bold text-gray-800">
+                SD Ahmad Yani Binjai
+             </h3>
+             <p class="mt-2 text-gray-600">
+                I completed my elementary school education at SD Ahmad Yani Binjai.
+             </p>
+            </div>
+         </div>
+        </div>
+     </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="container mx-auto px-6 py-16" id="contact">
+     <h2 class="text-3xl font-bold text-gray-800 text-center">
+        Contact Me
+     </h2>
+     <div class="mt-8 max-w-lg mx-auto">
+        <form action="#" class="bg-white p-8 rounded-lg shadow-lg" method="POST">
+         <div class="mb-4">
+            <label class="block text-gray-700" for="name">
+             Name
+            </label>
+            <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" name="name" type="text"/>
+         </div>
+         <div class="mb-4">
+            <label class="block text-gray-700" for="email">
+             Email
+            </label>
+            <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" name="email" type="email"/>
+         </div>
+         <div class="mb-4">
+            <label class="block text-gray-700" for="message">
+             Message
+            </label>
+            <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" name="message" rows="4"></textarea>
+         </div>
+         <div class="text-center">
+            <button class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" type="submit">
+             Send
+            </button>
+         </div>
+        </form>
+     </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+     <div class="container mx-auto px-6 text-center">
+        <p>
+         © 2023 My Portfolio. All rights reserved.
+        </p>
+        <div class="mt-4 space-x-4">
+         <a class="text-white hover:text-gray-400" href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+         </a>
+         <a class="text-white hover:text-gray-400" href="#">
+            <i class="fab fa-twitter">
+            </i>
+         </a>
+         <a class="text-white hover:text-gray-400" href="#">
+            <i class="fab fa-linkedin-in">
+            </i>
+         </a>
+         <a class="text-white hover:text-gray-400" href="#">
+            <i class="fab fa-github">
+            </i>
+         </a>
+        </div>
+     </div>
+    </footer>
+ </body>
+</html>
